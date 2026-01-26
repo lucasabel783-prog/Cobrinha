@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- TELA DE CONFIG -->
+  <div class="start-screen">
+    <h1>Snake Game</h1>
+
+    <input id="playerName" type="text" placeholder="Seu nome">
+
+    <input id="snakeColor" type="color" value="#ffffff">
+
+    <select id="difficulty">
+      <option value="easy">Fácil</option>
+      <option value="medium">Médio</option>
+      <option value="hard">Difícil</option>
+      <option value="extreme">Extrema</option>
+    </select>
+
+    <select id="gameMode">
+      <option value="single">Single</option>
+      <option value="coop">Coop (contra CPU)</option>
+      <option value="versus">Versus (mesmo PC)</option>
+    </select>
+
+    <select id="theme">
+      <option value="neon">Neon</option>
+      <option value="space">Space</option>
+      <option value="forest">Forest</option>
+    </select>
+
+    <label>Sensibilidade (velocidade)</label>
+    <input id="sensitivity" type="range" min="1" max="5" value="3">
+
+    <button id="startBtn">Começar</button>
+  </div>
+
+  <!-- HUD -->
+  <div class="hud">
+    <div class="score">Score: <span class="score--value">00</span></div>
+    <div class="timer">Tempo: <span id="time">00:00</span></div>
+    <div class="best-score">Best: <span id="bestScore">00</span></div>
+
+    <div class="ranking">
+      <div class="ranking-header">
+        <span>Ranking</span>
+        <div class="ranking-tabs">
+          <button class="tab active" data-diff="all">Geral</button>
+          <button class="tab" data-diff="easy">Fácil</button>
+          <button class="tab" data-diff="medium">Médio</button>
+          <button class="tab" data-diff="hard">Difícil</button>
+          <button class="tab" data-diff="extreme">Extrema</button>
+        </div>
+      </div>
+
+      <div id="rankingList" class="ranking-list"></div>
+    </div>
+
+    <button id="configBtn" class="config-btn">Mudar Nome/Cor</button>
+  </div>
+
+  <!-- MENU GAME OVER -->
+  <div class="menu-screen">
+    <span class="game-over">Game Over</span>
+    <span class="final-score">Score: <span></span></span>
+    <button class="btn-play">Jogar novamente</button>
+  </div>
+
+  <div id="pauseOverlay" class="pause-overlay">
+    <span>Pausado</span>
+    <small>Pressione P para continuar</small>
+  </div>
+
+  <canvas width="600" height="600"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
