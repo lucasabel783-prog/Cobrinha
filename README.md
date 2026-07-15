@@ -32,3 +32,16 @@ Depois é só abrir o `index.html` no navegador de sua preferência.
 - **JavaScript** — lógica do jogo (movimento, colisão, pontuação)
 
 ## 📁 Estrutura do projeto
+
+Cobrinha/ <br>
+├── index.html    # Tela principal do jogo <br>
+├── style.css     # Estilos <br>
+└── script.js     # Lógica do jogo <br>
+
+## 📌 Status
+
+Projeto pessoal em desenvolvimento — sugestões e melhorias são bem-vindas!
+
+## 📄 Licença
+
+Este projeto está disponível para uso livre. *(ajuste aqui se quiser adicionar uma licença específica, tipo MIT)*
