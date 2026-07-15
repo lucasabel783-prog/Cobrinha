@@ -41,7 +41,7 @@ Cobrinha/ <br>
 ## 📌 Status
 
 Projeto pessoal em desenvolvimento — sugestões e melhorias são bem-vindas!
-
+ 
 ## 📄 Licença
 
 Este projeto está disponível para uso livre. *(ajuste aqui se quiser adicionar uma licença específica, tipo MIT)*
